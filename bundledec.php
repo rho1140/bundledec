@@ -7,7 +7,7 @@ $payload = json_decode(file_get_contents('php://input'));
 //What we want the webhook to do 
 //The URL that we want to send a PUT request to.
 $url = 'https://store-njwk9edm.mybigcommerce.com/api/v2/products/20961';
-$fields = json_encode(array("description" => "$payload"));
+$fields = json_encode(array("description" => "Trigger1"));
 $headers = array(
 	'Content-type: application/json',
     'Authorization: Basic '. base64_encode("lucian:6b02cfb11c15b43b564106e3debccfcf1b41a625")
